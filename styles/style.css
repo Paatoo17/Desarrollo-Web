@@ -1,0 +1,75 @@
+/*Reset CSS*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+.logo {width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+  font-size: 35px;           
+  font-weight: bold;         
+  text-decoration: underline;
+  text-transform: capitalize;         
+}
+
+h2 {
+  font-size: 20px;                    
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.frase-motivacional{
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+p{
+font-size: 15px;                    
+text-decoration: #7A8D7F;
+}
+
+
+/*  Paleta de colores
+color:  #9CAE9F; Verde claro
+         #7A8D7F; HOVER sobre el verde claro
+         #526257; Pie de para foto
+
+*/
+
+/* Estilo Nav */
+
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  margin-right: 20px;          /* Espacio entre elementos*/
+}
+
+.navbar a {
+  color: #9CAE9F;            
+  text-decoration: none;     
+}
+
+.navbar a:hover {
+  color: #7A8D7F;
+}
+
+
+footer {
+  text-align: center;
+}

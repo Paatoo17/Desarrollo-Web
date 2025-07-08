@@ -1,0 +1,191 @@
+/*Reset CSS*/
+
+
+/* Fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+.logo {width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1 {
+  font-size: 35px;           
+  font-weight: bold;         
+  text-decoration: underline;
+  margin: 1rem 0;   
+  text-transform: capitalize;         
+}
+
+h2 {
+  font-size: 20px;                    
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.frase-motivacional{
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+p{
+font-size: 15px;                    
+text-decoration: #7A8D7F;
+}
+
+
+/*  Paleta de colores
+color:  #9CAE9F; Verde claro
+         #7A8D7F; HOVER sobre el verde claro
+         #526257; Pie de para foto
+
+*/
+
+/* Estilo Nav */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; /* Espacio interno arriba/abajo */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 100px; /* Ajusta el espacio entre elementos */
+  border-bottom: 1.5px solid #9CAE9F; /* Línea divisora sutil */
+}
+
+.navbar li {
+  margin-right: 20px;          /* Espacio entre elementos*/
+}
+
+.navbar a {
+  color: #9CAE9F;            
+  text-decoration: none;     
+}
+
+.navbar a:hover {
+  color: #7A8D7F;
+}
+
+/*CTA*/
+.cta-acciones {
+    display: flex;
+  flex-direction: column; /* uno debajo del otro */
+  align-items: center;     /* centrado horizontal */
+  justify-content: center; /* centrado vertical */
+  gap: 12px;  
+}
+
+.boton-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9CAE9F;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #9CAE9F;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos generales para la sección EVENTOS*/
+
+
+
+/* Grid de eventos */
+.grid-eventos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0;
+}
+
+/* Estilo de cada evento */
+.evento {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s;
+}
+
+.evento-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Mantiene la imagen sin deformar */
+}
+
+.evento-info {
+  padding: 8px;
+}
+
+
+
+
+
+/* Carrusel horizontal */
+.carrusel {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+
+/* Tarjeta de foto */
+.foto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /*Para mantener la foto sin deformar */
+}
+
+.foto-info {
+  padding: 16px;
+}
+
+.foto-autor {
+  font-weight: bold;
+  color: #000000; 
+  font-size: 14px;
+  margin: 5px;
+}
+
+.foto-pie {
+  color: #526257;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/*Estilo redes*/
+
+.redes {
+  display: flex;
+  align-items: center; /* Alinea el título con la lista */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 20px; /* Espacio entre título e íconos */
+  padding: 15px 0;
+}
+
+
+.iconos {
+ display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 30px;
+  gap: 10px; /* Espacio entre íconos */
+}
+
