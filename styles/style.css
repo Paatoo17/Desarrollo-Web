@@ -13,12 +13,15 @@
 .logo {width: 150px;
     height: auto;
     border-radius: 8px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 h1 {
   font-size: 35px;           
   font-weight: bold;         
   text-decoration: underline;
+  margin: 1rem 0;   
   text-transform: capitalize;         
 }
 
@@ -46,30 +49,86 @@ text-decoration: #7A8D7F;
 color:  #9CAE9F; Verde claro
          #7A8D7F; HOVER sobre el verde claro
          #526257; Pie de para foto
+         #5a675d; PAGINA SELECCIONADA
 
 */
 
 /* Estilo Nav */
 
-
-.navbar ul {
-  list-style: none;
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding: 10px 0; /* Espacio interno arriba/abajo */
 }
 
 .navbar li {
-  margin-right: 20px;          /* Espacio entre elementos*/
+  margin-inline-end: 20px; /* Espacio entre elementos*/
 }
+
 
 .navbar a {
   color: #9CAE9F;            
-  text-decoration: none;     
+  text-decoration: none;
 }
 
 .navbar a:hover {
   color: #7A8D7F;
 }
 
+.nav-link.active {
+  color: #5a675d !important;
+}
+
+.navbar-svg {
+    width: 30px;
+    height: 30px;
+}
 
 footer {
   text-align: center;
 }
+
+/*CTA*/
+.cta-acciones {
+    display: flex;
+  flex-direction: column; /* uno debajo del otro */
+  align-items: center;     /* centrado horizontal */
+  justify-content: center; /* centrado vertical */
+  gap: 12px;  
+}
+
+.boton-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9CAE9F;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #9CAE9F;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Estilo redes*/
+
+.redes {
+  display: flex;
+  align-items: center; /* Alinea el título con la lista */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 20px; /* Espacio entre título e íconos */
+  padding: 15px 0;
+}
+
+
+.iconos {
+ display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 30px;
+  gap: 10px; /* Espacio entre íconos */
+}
+
