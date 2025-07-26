@@ -81,8 +81,8 @@ color:  #9CAE9F; Verde claro
   color: #7A8D7F;
 }
 
-.nav-link.active {
-  color: #5a675d !important;
+.nav-link.a {
+  color: #5a675d;
 }
 
 .navbar-svg {
