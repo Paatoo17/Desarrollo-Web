@@ -133,33 +133,15 @@ footer {
 /* Estilos generales para la sección EVENTOS*/
 
 
+/*.card-img {
+  height: 220px;        /* Ajusta la altura a lo que quede mejor */
+  /*object-fit: cover;    /* Recorta sin deformar la foto */
 
-/* Grid de eventos */
-.grid-eventos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive */
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0;
-}
 
-/* Estilo de cada evento */
-.evento {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-  transition: transform 0.3s;
-}
-
-.evento-img {
+.card {
   width: 100%;
-  height: 150px;
-  object-fit: cover; /* Mantiene la imagen sin deformar */
-}
-
-.evento-info {
-  padding: 8px;
+  height: 100%;
+  object-fit: cover;  /*Asegura que todas las cards ocupen la misma altura en su columna */
 }
 
 
