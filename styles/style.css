@@ -4,6 +4,18 @@
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 30px;
+  }
+}
+
 /* Fuente */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -106,6 +118,7 @@ footer {
 .boton-cta {
   display: inline-block;
   padding: 10px 20px;
+  margin: 5px;
   background-color: #9CAE9F;
   color: white;
   text-decoration: none;
