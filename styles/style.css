@@ -62,6 +62,7 @@ text-decoration: #7A8D7F;
 }
 
 
+
 /*  Paleta de colores
 color:  #9CAE9F; Verde claro
          #7A8D7F; HOVER sobre el verde claro
@@ -134,9 +135,9 @@ footer {
 
 
 .card {
-  width: 100%;
+  width: 18rem;
   height: 100%;
-  object-fit: cover;  /*Asegura que todas las cards ocupen la misma altura en su columna */
+  object-fit: cover; 
 }
 
 
@@ -203,7 +204,7 @@ footer {
 /*Estilo del carrusel*/
 /* 🔥 Carrusel base */
 #carouselExampleIndicators {
-  max-height: 500px;  /* puedes ajustar este alto */
+  max-height: 500px;  /*ajusto el alto */
   overflow: hidden;
   background: #000;
 }
@@ -214,35 +215,13 @@ footer {
   object-fit: cover;   /* recorta un poco para que no se deforme */
 }
 
-/* 📱 En pantallas chicas: dejamos que la imagen se ajuste entera */
+/* En pantallas chicas:  la imagen se ajusta entera */
 @media (max-width: 768px) {
   #carouselExampleIndicators {
     max-height: none;
   }
   #carouselExampleIndicators .carousel-item img {
-    height: auto;      /* que use su altura natural */
+    height: auto;      /* que use su altura */
     object-fit: contain; /* que no recorte nada */
   }
-}
-
-.caption-box {
-  background-color: #fff;        /* fondo blanco como en Instagram */
-  padding: 10px 15px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border: 1px solid #ddd;        /* línea sutil como Instagram */
-  border-top: none;              /* la imagen hace de “parte de arriba” */
-  margin-top: -4px;              /* elimina el espacio entre imagen y caja */
-}
-
-.caption-box h5 {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.caption-box p {
-  margin: 5px 0 0 0;
-  font-size: 0.9rem;
-  color: #555;
 }
