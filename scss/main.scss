@@ -1,4 +1,7 @@
 //base
 
 @use "./partial/base/_reset.sass";
-@use "./partial/base/_tipografia.sass"
+@use "./partial/base/_tipografia.sass";
+
+//Componentes
+@use "./partial/components/_logo.sass"
