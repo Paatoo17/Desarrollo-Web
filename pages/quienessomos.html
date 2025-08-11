@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <!--CSS -->
   <link rel="stylesheet" href="../styles/style.css">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <title>Movimiento Verde</title>
 </head>
 <body>
@@ -51,19 +54,22 @@
   <main class="container">
   <div class="row m-3">  
     <h1>Nosotros!</h1>
-
+    
     <div class="col-lg-6 p-4">
+      <div data-aos="fade-right">
           <h2>Vision</h2>
           <p>Ser la red de referencia para la promoción de acciones ecológicas en cada persona, logrando inspiracion, no solo en personas, sino que tambien en empresas y comunidades para construir un mundo más sustentable, justo y armonioso con la naturaleza.</p>     
-        
+       </div> 
     </div> 
 
     
-
+    
     <div class="col-lg-6 p-4">
+        <div data-aos="fade-left">
          <h2>Mision</h2>
         <p>Promover y facilitar iniciativas que fomenten el cuidado del medio ambiente a través de la educación, la acción comunitaria y la innovación. 
           Creemos que cada persona tiene el poder de marcar la diferencia, y nuestra misión es brindarles las herramientas, recursos y motivación para ser parte del cambio que buscamos. </p>
+          </div>
     </div>
 
     <div class="col-md-12 p-4">
@@ -85,8 +91,21 @@
       </div>
     </footer>
 
-  <!-- BOOTSTRAP JS -->
+ <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Inicializar AOS -->
+    <script>
+        AOS.init({
+          duration: 500,
+          easing: 'ease-in-out',
+          once: true
+          }
+        );
+    </script>
+
 
 </body>
 </html>
