@@ -1,0 +1,6 @@
+@use "../utilities/mixins";
+
+
+.card {
+    @include mixins.card (18rem, 100%, cover);
+}

@@ -1,0 +1,18 @@
+@mixin flex ($justify, $align, $padding) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    padding: $padding;
+}
+
+@mixin card ($width, $height, $object) {
+  width: $width;
+  height: $height;
+  object-fit: $object; 
+}
+
+@mixin fuente ($size, $decoration, $transform) {
+  font-size: $size;
+  text-decoration: $decoration;
+  text-transform: $transform;
+}

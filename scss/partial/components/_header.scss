@@ -1,0 +1,27 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+.navbar {
+  @include mixins.flex(left, flex-end, 10px);
+
+  li {
+    margin-inline-end: 20px;
+  }
+  a {
+      color: variables.$verde-claro;
+    }
+  &:hover {
+    color: variables.$HOVER;
+  }
+}
+
+.nav-link.a {
+  color: variables.$action-page;
+
+
+}
+
+.navbar-svg {
+  width: 30px;
+  height: 30px;
+}

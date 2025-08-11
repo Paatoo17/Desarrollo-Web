@@ -1,0 +1,23 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+.carousel-slide{
+  max-height: 500px;  /*ajusto el alto */
+  overflow: hidden;
+  background: variables.$black;
+}
+
+.carousel-item img{
+            @include mixins.card (auto, 30rem, cover);
+        }
+
+/* En pantallas chicas:  la imagen se ajusta entera */
+@media (max-width: 768px) {
+  .carousel{
+    max-height: none;
+  }
+  .carousel.carousel-item img {
+    height: auto;      
+    object-fit: contain; 
+  }
+}

@@ -1,0 +1,24 @@
+//
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+.foto-img{
+    @include mixins.card (100%, 200px, cover);
+}
+
+.foto-info{
+    padding: 16px;
+}
+
+.foto-autor {
+  font-weight: bold;
+  color: variables.$black; 
+  font-size: 14px;
+  margin: 5px;
+}
+
+.foto-pie {
+  color: variables.$pie-foto;
+  font-size: 14px;
+  font-weight: bold;
+}

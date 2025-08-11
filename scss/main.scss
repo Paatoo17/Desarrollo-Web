@@ -1,7 +1,17 @@
 //base
 
-@use "./partial/base/_reset.sass";
-@use "./partial/base/_tipografia.sass";
+@use "./partial/base/_reset.scss";
+@use "./partial/base/_tipografia.scss";
 
 //Componentes
-@use "./partial/components/_logo.sass"
+@use "./partial/components/general";
+@use "./partial/components/_logo.scss";
+@use "./partial/components/header";
+@use "./partial/components/footer";
+@use "./partial/components/buttons";
+@use "./partial/components/card";
+@use "./partial/components/foto";
+@use "./partial/components/redes";
+@use "./partial/components/iconos";
+@use "./partial/components/carousel";
+@use "./partial/components/media";

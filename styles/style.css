@@ -1,17 +1,182 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @use "./partial/base/_reset.sass";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\main.scss 3:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use \"./partial/base/_reset.sass\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 3:1  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 35px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 20px;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.frase-motivacional {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  text-decoration: #526257;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding: 10px;
+}
+.navbar li {
+  margin-inline-end: 20px;
+}
+.navbar a {
+  color: #9CAE9F;
+}
+.navbar:hover {
+  color: #7A8D7F;
+}
+
+.nav-link.a {
+  color: #5a675d;
+}
+
+.navbar-svg {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+.boton-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #9CAE9F;
+  border-radius: 8px;
+}
+
+.boton-cta {
+  background-color: #9CAE9F;
+}
+.boton-cta:hover {
+  color: #7A8D7F;
+}
+
+.card {
+  width: 18rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.foto-info {
+  padding: 16px;
+}
+
+.foto-autor {
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.foto-pie {
+  color: #526257;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+.iconos {
+  width: 100%;
+  height: 20px;
+  object-fit: cover;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.carousel-slide {
+  max-height: 500px; /*ajusto el alto */
+  overflow: hidden;
+  background: #000000;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 30rem;
+  object-fit: cover;
+}
+
+/* En pantallas chicas:  la imagen se ajusta entera */
+@media (max-width: 768px) {
+  .carousel {
+    max-height: none;
+  }
+  .carousel.carousel-item img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

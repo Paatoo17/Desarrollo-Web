@@ -1,0 +1,11 @@
+@use "../utilities/extend";
+@use "../utilities/variables";
+
+.boton-cta{
+    @extend %button;
+    background-color: variables.$verde-claro;
+
+    &:hover {
+        color: variables.$HOVER;
+    }
+}

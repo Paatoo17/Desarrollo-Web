@@ -1,0 +1,6 @@
+@use "../utilities/mixins";
+
+.redes {
+    @include mixins.flex (center, center, 15px);
+    gap: 20px;
+}

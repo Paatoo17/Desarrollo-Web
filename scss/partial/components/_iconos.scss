@@ -1,0 +1,10 @@
+@use "../utilities/mixins";
+
+.iconos {
+    @include mixins.card (100%, 20px, cover);
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}

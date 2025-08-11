@@ -1,0 +1,31 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+// fuente ($size, $decoration, $transform)
+
+h1 {
+    @include mixins.fuente (35px, underline, capitalize);
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+h2 {
+    @include mixins.fuente (20px, underline, capitalize);
+}
+
+
+h3{
+    @include mixins.fuente (15px, none, capitalize);
+}
+
+.frase-motivacional {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+p{
+font-size: 15px;                    
+text-decoration: variables.$pie-foto;
+}
