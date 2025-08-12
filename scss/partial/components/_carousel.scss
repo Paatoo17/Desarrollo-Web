@@ -2,7 +2,7 @@
 @use "../utilities/mixins";
 
 .carousel-slide{
-  max-height: 500px;  /*ajusto el alto */
+  max-height: 500px;
   overflow: hidden;
   background: variables.$black;
 }
@@ -11,7 +11,6 @@
             @include mixins.card (auto, 30rem, cover);
         }
 
-/* En pantallas chicas:  la imagen se ajusta entera */
 @media (max-width: 768px) {
   .carousel{
     max-height: none;

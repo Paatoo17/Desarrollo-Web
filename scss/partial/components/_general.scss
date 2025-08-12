@@ -28,4 +28,16 @@ h3{
 p{
 font-size: 15px;                    
 text-decoration: variables.$pie-foto;
+color: variables.$pie-foto
+}
+
+
+a {
+  text-decoration: none;
+}
+    
+li {
+    color: variables.$pie-foto;
+    font-size: 14px;
+    font-weight: bold;
 }
