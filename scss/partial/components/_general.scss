@@ -4,18 +4,29 @@
 // fuente ($size, $decoration, $transform)
 
 h1 {
-    @include mixins.fuente (35px, underline, capitalize);
+    @include mixins.fuente (30px, underline, capitalize);
     font-weight: bold;
     margin: 1rem 0;
 }
 
 h2 {
-    @include mixins.fuente (20px, underline, capitalize);
+    @include mixins.fuente (20px, none, capitalize);
+    font-style: italic;
 }
 
 
 h3{
-    @include mixins.fuente (15px, none, capitalize);
+    @include mixins.fuente (18px, none, capitalize);
+    color: variables.$action-page;
+}
+
+h4 {
+    @include mixins.fuente (16px, none, none);
+    font-weight: bold;
+}
+
+h5 {
+  @include mixins.fuente (15px, none, none);
 }
 
 .frase-motivacional {
@@ -37,6 +48,6 @@ a {
     
 li {
     color: variables.$pie-foto;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 14px
 }
+

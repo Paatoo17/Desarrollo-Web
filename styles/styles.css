@@ -5,7 +5,7 @@
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 30px;
   text-decoration: underline;
   text-transform: capitalize;
   font-weight: bold;
@@ -14,14 +14,29 @@ h1 {
 
 h2 {
   font-size: 20px;
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: capitalize;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   text-transform: capitalize;
+  color: #5a675d;
+}
+
+h4 {
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: none;
 }
 
 .frase-motivacional {
@@ -43,7 +58,6 @@ a {
 li {
   color: #526257;
   font-size: 14px;
-  font-weight: bold;
 }
 
 .logo {
@@ -81,6 +95,10 @@ li {
 
 footer {
   text-align: center;
+}
+
+figure blockquote ul li {
+  font-weight: bold;
 }
 
 .boton-cta {
@@ -180,4 +198,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

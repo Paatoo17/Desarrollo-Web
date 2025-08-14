@@ -1,0 +1,11 @@
+@use "../utilities/variables";
+
+figure {
+    blockquote {
+        ul{
+            li {
+                font-weight: bold
+            }
+        }
+    }
+}
